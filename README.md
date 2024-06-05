@@ -1,5 +1,16 @@
-Make A folder called Mirror Three Host_1 and put all these in it. Then Clone Mirror Three by downloading the zip named Mirror Three Hostz.zip. Next, decompress the files and start using them. you can use the corpus' as external HHD's for each plug depth. This will sound less esoteric later... After you have this setup, locate the file you created '''YourComputerPathFrom~C:To~end:'''/Mirror Three Host_1\Found New Depths! Mirror Four!\Daemon
+Make A folder called Mirror Three Host_1 and put all these in it. n\
+1 n\
+Then Clone Mirror Three by downloading the zip named Mirror Three Hostz.zip. 
+2
+Next, decompress the files and start using them. you can use the corpus' as external HHD's for each plug depth.
+3
+This will sound less esoteric later...
+5
+After you have this setup, locate the file you created 
+'''YourComputerPathFrom~C:To~end:'''/Mirror Three Host_1\Found New Depths! Mirror Four!\Daemon
+6
 Once you found the Daemon Folder you should see 6 layers of python files 
+4
 Layer 0 32x32 black box Host Shell Script (build .py in ide to Plug Depth)
 Layer 1 32x32 black box Host Shell (build .py in ide to Plug Depth)
 Layer 2 32x32 black box Host (build .py in ide to Plug Depth)
@@ -7,9 +18,16 @@ Layer 3 32x32 black box (build .py in ide to Plug Depth)
 Layer 4 32x32 Daemon Server Matrix (build .py in ide to Plug Depth)
 Layer 5 32x32 DemonHead Domain Matrix (build in .py to Plug Depth)
 Layer 6 16x28 AngelHead
-
-Open Up VS Code and open up Daemon as the workspace folder. If you don't know what this means you can search engine it. Once you have all the files opened, you need to make a new tasks.json for your vs code cmd palette
-Ask ChatGPT how to use this code to let you open up all 6 layers at once or figure it out if you know how~~ if you know what you're doing you probably already opened up Cmd+Shift+P.
+5
+Open Up VS Code and open up Daemon as the workspace folder. 
+6
+If you don't know what this means you can search engine it. 
+7
+Once you have all the files opened, you need to make a new tasks.json for your vs code cmd palette
+8
+Ask ChatGPT how to use this code to let you open up all 6 layers at once or figure it out if you know how~~ 
+19
+if you know what you're doing you probably already opened up Cmd+Shift+P.
 {
     "version": "2.0.0",
     "tasks": [
