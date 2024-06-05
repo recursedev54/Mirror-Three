@@ -45,7 +45,7 @@ The MirrorDAWg Team\
 
 ---
 
-Feel free to share your thoughts and experiences with Mirror Three in the discord server. Your feedback is invaluable to us as we continue to refine and enhance our platform.
+# Feel free to share your thoughts and experiences with Mirror Three in the discord server. Your feedback is invaluable to us as we continue to refine and enhance our platform.
 # MirrorBLAWG Post: Setting Up Mirror Three - A Step-by-Step Guide
 
 
