@@ -1,4 +1,4 @@
-# Mirror
+# Mirror 3, the Daemon...
 
 ![Daemon Image](https://github.com/zrebarchak/Mirror-Three/blob/main/Daemon.png?raw=true)
 
