@@ -1,4 +1,4 @@
-# My Project
+# Mirror
 
 This is a description of my project.
 
@@ -10,7 +10,7 @@ This is a description of my project.
 
 ## Screenshot
 
-![Mirror Three Screenshot](https://github.com/zrebarchak/Mirror-Three/blob/main/Screenshot_23.png?raw=true)
+![Mirror Three Screenshot]([https://github.com/zrebarchak/Mirror-Three/blob/main/Screenshot_23.png?raw=true](https://github.com/zrebarchak/Mirror-Three/blob/main/Daemon.png?raw=true))
 
 
 ## Installation
