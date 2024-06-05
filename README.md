@@ -1,16 +1,43 @@
 Make A folder called Mirror Three Host_1 and put all these in it. n\
 1 n\
+~ n\
+~ n\
+~ n\
 Then Clone Mirror Three by downloading the zip named Mirror Three Hostz.zip. n\
 2
+~ n\
+~ n\
+~ n\
+~ n\
 Next, decompress the files and start using them. you can use the corpus' as external HHD's for each plug depth. n\
 3
+~ n\
+~ n\
+~ n\
+~ n\
 This will sound less esoteric later... n\
 5
+~ n\
+~ n\
+~ n\
+~ n\
 After you have this setup, locate the file you created n\
 '''YourComputerPathFrom~C:To~end:'''/Mirror Three Host_1\Found New Depths! Mirror Four!\Daemon n\
 6 n\
+~ n\
+~ n\
+~ n\
+~ n\
 Once you found the Daemon Folder you should see 6 layers of python files n\
 4 n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
 Layer 0 32x32 black box Host Shell Script (build .py in ide to Plug Depth) n\
 Layer 1 32x32 black box Host Shell (build .py in ide to Plug Depth) n\
 Layer 2 32x32 black box Host (build .py in ide to Plug Depth) n\
@@ -19,14 +46,36 @@ Layer 4 32x32 Daemon Server Matrix (build .py in ide to Plug Depth) n\
 Layer 5 32x32 DemonHead Domain Matrix (build in .py to Plug Depth) n\
 Layer 6 16x28 AngelHead n\
 5 n\
+~ n\
 Open Up VS Code and open up Daemon as the workspace folder. n\ 
 6 n\
+~ n\
 If you don't know what this means you can search engine it. 
 7
+~ n\
+~ n\
+~ n\
 Once you have all the files opened, you need to make a new tasks.json for your vs code cmd palette
 8
+~ n\
+~ n\
+~ n\
+~ n\
 Ask ChatGPT how to use this code to let you open up all 6 layers at once or figure it out if you know how~~ 
 19
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
+~ n\
 if you know what you're doing you probably already opened up Cmd+Shift+P.
 {
     "version": "2.0.0",
