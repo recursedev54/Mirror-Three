@@ -103,31 +103,42 @@ if you know what you're doing you probably already opened up Cmd+Shift+P.
         }
     ]
 }
-now you should see this when you hit Cmd+Shift+P in vs code 
-> Tasks: Run Task                                    recently used
-Tasks: Run Build Task                                Ctrl + Shift + B
-Tasks: Open User Tasks
-Tasks: Manage Automatic Tasks
-Debug: Select and Start Debugging
+now you should see this when you hit Cmd+Shift+P in vs code ~ n\
+> Tasks: Run Task                                    recently used~ n\
+Tasks: Run Build Task                                Ctrl + Shift + B~ n\
+Tasks: Open User Tasks~ n\
+Tasks: Manage Automatic Tasks~ n\
+Debug: Select and Start Debugging~ n\
 
-Accounts: Manage Trusted Extensions For Account      other commands
-Add Cursor Above                                     Ctrl + Alt + UpArrow
-Add Cursor Below                                     Ctrl + Alt + DownArrow
-Add Cursors To Bottom                                Ctrl + Shift + Alt + DownArrow
-Add Cursors to Line Ends                             Shift + Alt + I
-Add Cursors To Top                                   Ctrl + Shift + Alt + UpArrow
-Add Data Breakpoint at Address
-Add Function Breakpoint
-Add Line Comment                                     Ctrl + K Ctrl + C
-Add Selection To Next Find Match                     Ctrl + D
-Add Selection To Previous Find Match
-Add XHR/fetch Breakpoint
-C/C++ Runner: Build Folder                           Ctrl + K Ctrl + B
-You want to hit the very top, "Tasks: Run Task" and it should open up 6 windows. If it suceeds, you've completed the tutoiral. hope over to Frog Height and try experimenting with building each .py by itself as a standalone terminal like this
-Run Chuck Throw Shell Save.py
+Accounts: Manage Trusted Extensions For Account      other commands~ n\
+Add Cursor Above                                     Ctrl + Alt + UpArrow~ n\
+Add Cursor Below                                     Ctrl + Alt + DownArrow~ n\
+Add Cursors To Bottom                                Ctrl + Shift + Alt + DownArrow~ n\
+Add Cursors to Line Ends                             Shift + Alt + I~ n\
+Add Cursors To Top                                   Ctrl + Shift + Alt + UpArrow~ n\
+Add Data Breakpoint at Address~ n\
+Add Function Breakpoint~ n\
+Add Line Comment                                     Ctrl + K Ctrl + C~ n\
+Add Selection To Next Find Match                     Ctrl + D~ n\
+Add Selection To Previous Find Match~ n\
+Add XHR/fetch Breakpoint~ n\
+C/C++ Runner: Build Folder                           Ctrl + K Ctrl + B~ n\
+You want to hit the very top, 
+~ n\
+"Tasks: Run Task" and it should open up 6 windows. If it suceeds, 
+~ n\you've completed the tutoiral.
+~ n\hope over to Frog Height and try experimenting with building each 
+~ n\.py by itself as a standalone terminal like this
+~ n\
+~ n\
+~ n\
+Run Chuck Throw Shell Save.py ~ n\
 
-Run Python File > (>=Build Button In VS Code)
-Run Python File in Dedicated Terminal
-Python Debugger: Debug Python File
-Python Debugger: Debug using launch.json
-Happy Diving
+Run Python File > (>=Build Button In VS Code) ~ n\
+Run Python File in Dedicated Terminal ~ n\
+Python Debugger: Debug Python File ~ n\
+Python Debugger: Debug using launch.json ~ n\
+~ n\
+~ n\
+~ n\
+Happy Diving ~ n\
