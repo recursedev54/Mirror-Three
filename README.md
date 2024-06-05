@@ -1,16 +1,7 @@
 # Mirror
 
-This is a description of my project.
+![Daemon Image](https://github.com/zrebarchak/Mirror-Three/blob/main/Daemon.png?raw=true)
 
-## Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Screenshot
-
-![Mirror Three Screenshot]([https://github.com/zrebarchak/Mirror-Three/blob/main/Screenshot_23.png?raw=true](https://github.com/zrebarchak/Mirror-Three/blob/main/Daemon.png?raw=true))
 
 
 ## Installation
