@@ -1,3 +1,5 @@
+![Screenshot 19](https://github.com/zrebarchak/Mirror-Three/blob/main/Screenshot_19.png?raw=true)
+
 # Mirror 3, the Daemon...
 
 ![Daemon Image](https://github.com/zrebarchak/Mirror-Three/blob/main/Daemon.png?raw=true)
