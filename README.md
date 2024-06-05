@@ -1,6 +1,6 @@
 #Layer 28, the codex stream
 ![Screenshot 28](https://github.com/zrebarchak/Mirror-Three/blob/main/Screenshot_28.png?raw=true)
-'''import os
+"import os
 import tkinter as tk
 from tkinter import ttk
 
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current script
     tree_structure = print_clipped_tree(base_dir)
     display_tree_in_tkinter(tree_structure)
-'''
+"
 z~` Here’s an explanation of the provided code in a format suitable for someone who might be using a screen reader or doesn't know Python. I'll break it down step by step and explain each part in plain language.
 
 ### Introduction
