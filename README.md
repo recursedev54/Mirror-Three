@@ -10,7 +10,7 @@ This is a description of my project.
 
 ## Screenshot
 
-![Mirror Three Screenshot](https://raw.githubusercontent.com/your-username/your-repo-name/main/Mirror-Three/Screenshot_23.png)
+![Mirror Three Screenshot]([https://raw.githubusercontent.com/your-username/your-repo-name/main/Mirror-Three/Screenshot_23.png](https://github.com/zrebarchak/Mirror-Three/blob/main/Screenshot_23.png?raw=true))
 
 
 ## Installation
