@@ -1,26 +1,26 @@
 Make A folder called Mirror Three Host_1 and put all these in it. n\
 1 n\
-Then Clone Mirror Three by downloading the zip named Mirror Three Hostz.zip. 
+Then Clone Mirror Three by downloading the zip named Mirror Three Hostz.zip. n\
 2
-Next, decompress the files and start using them. you can use the corpus' as external HHD's for each plug depth.
+Next, decompress the files and start using them. you can use the corpus' as external HHD's for each plug depth. n\
 3
-This will sound less esoteric later...
+This will sound less esoteric later... n\
 5
-After you have this setup, locate the file you created 
-'''YourComputerPathFrom~C:To~end:'''/Mirror Three Host_1\Found New Depths! Mirror Four!\Daemon
-6
-Once you found the Daemon Folder you should see 6 layers of python files 
-4
-Layer 0 32x32 black box Host Shell Script (build .py in ide to Plug Depth)
-Layer 1 32x32 black box Host Shell (build .py in ide to Plug Depth)
-Layer 2 32x32 black box Host (build .py in ide to Plug Depth)
-Layer 3 32x32 black box (build .py in ide to Plug Depth)
-Layer 4 32x32 Daemon Server Matrix (build .py in ide to Plug Depth)
-Layer 5 32x32 DemonHead Domain Matrix (build in .py to Plug Depth)
-Layer 6 16x28 AngelHead
-5
-Open Up VS Code and open up Daemon as the workspace folder. 
-6
+After you have this setup, locate the file you created n\
+'''YourComputerPathFrom~C:To~end:'''/Mirror Three Host_1\Found New Depths! Mirror Four!\Daemon n\
+6 n\
+Once you found the Daemon Folder you should see 6 layers of python files n\
+4 n\
+Layer 0 32x32 black box Host Shell Script (build .py in ide to Plug Depth) n\
+Layer 1 32x32 black box Host Shell (build .py in ide to Plug Depth) n\
+Layer 2 32x32 black box Host (build .py in ide to Plug Depth) n\
+Layer 3 32x32 black box (build .py in ide to Plug Depth) n\
+Layer 4 32x32 Daemon Server Matrix (build .py in ide to Plug Depth) n\
+Layer 5 32x32 DemonHead Domain Matrix (build in .py to Plug Depth) n\
+Layer 6 16x28 AngelHead n\
+5 n\
+Open Up VS Code and open up Daemon as the workspace folder. n\ 
+6 n\
 If you don't know what this means you can search engine it. 
 7
 Once you have all the files opened, you need to make a new tasks.json for your vs code cmd palette
