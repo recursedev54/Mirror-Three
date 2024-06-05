@@ -742,3 +742,4 @@ Happy Diving! Check out the "fun" folder for standalone apps that can go alongsi
 ---
 
 We hope this guide helps you get started with Mirror Three. Enjoy the new features and enhancements, and don't hesitate to share your feedback. Happy coding!
+join the discord: https://discord.gg/hEKB9uEz mirrordawg community...!
