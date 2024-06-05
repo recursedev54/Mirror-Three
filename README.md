@@ -45,150 +45,98 @@ The MirrorDAWg Team\
 
 ---
 
-Feel free to share your thoughts and experiences with Mirror Three in the comments below or on our community forums. Your feedback is invaluable to us as we continue to refine and enhance our platform.\alright now that that guys is done... ... ... ...
-you dont need to install anything before starting. open up a .py to see its requirements. they're all modular.
-Make A folder called Mirror Three Host_1 and put all these in it. n\
-1 n\
-~ n\
-~ n\
-~ n\
-Then Clone Mirror Three by downloading the zip named Mirror Three Hostz.zip. n\
-2
-~ n\
-~ n\
-~ n\
-~ n\
-Next, decompress the files and start using them. you can use the corpus' as external HHD's for each plug depth. n\
-3
-~ n\
-~ n\
-~ n\
-~ n\
-This will sound less esoteric later... n\
-5
-~ n\
-~ n\
-~ n\
-~ n\
-After you have this setup, locate the file you created n\
-'''YourComputerPathFrom~C:To~end:'''/Mirror Three Host_1\Found New Depths! Mirror Four!\Daemon n\
-6 n\
-~ n\
-~ n\
-~ n\
-~ n\
-Once you found the Daemon Folder you should see 6 layers of python files n\
-4 n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-Layer 0 32x32 black box Host Shell Script (build .py in ide to Plug Depth) n\
-Layer 1 32x32 black box Host Shell (build .py in ide to Plug Depth) n\
-Layer 2 32x32 black box Host (build .py in ide to Plug Depth) n\
-Layer 3 32x32 black box (build .py in ide to Plug Depth) n\
-Layer 4 32x32 Daemon Server Matrix (build .py in ide to Plug Depth) n\
-Layer 5 32x32 DemonHead Domain Matrix (build in .py to Plug Depth) n\
-Layer 6 16x28 AngelHead n\
-5 n\
-~ n\
-Open Up VS Code and open up Daemon as the workspace folder. n\ 
-6 n\
-~ n\
-If you don't know what this means you can search engine it. 
-7
-~ n\
-~ n\
-~ n\
-Once you have all the files opened, you need to make a new tasks.json for your vs code cmd palette
-8
-~ n\
-~ n\
-~ n\
-~ n\
-Ask ChatGPT how to use this code to let you open up all 6 layers at once or figure it out if you know how~~ 
-19
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-~ n\
-if you know what you're doing you probably already opened up Cmd+Shift+P.
+Feel free to share your thoughts and experiences with Mirror Three in the comments below or on our community forums. Your feedback is invaluable to us as we continue to refine and enhance our platform.
+# MirrorBLAWG Post: Setting Up Mirror Three - A Step-by-Step Guide
+
+Feel free to share your thoughts and experiences with Mirror Three in the comments below or on our community forums. Your feedback is invaluable to us as we continue to refine and enhance our platform.
+
+Alright, now that the overview is done, let's dive into setting up Mirror Three. Follow these steps to get started:
+
+### 1. Prepare Your Workspace
+You don't need to install anything before starting. Open up a `.py` file to see its requirements. They're all modular.
+
+**Step 1**: Make a folder called `Mirror Three Host_1` and put all these files in it.
+
+### 2. Clone Mirror Three
+**Step 2**: Clone Mirror Three by downloading the zip named `Mirror Three Hostz.zip`.
+
+**Step 3**: Decompress the files and start using them. You can use the corpus' as external HDDs for each plug depth.
+
+**Note**: This will sound less esoteric later...
+
+### 3. Locate the Daemon Folder
+**Step 4**: After you have this setup, locate the file you created:
+`YourComputerPathFromC:Toend:/Mirror Three Host_1/Found New Depths! Mirror Four!/Daemon`
+
+**Step 5**: Once you find the Daemon folder, you should see six layers of Python files:
+
+- **Layer 0**: 32x32 black box Host Shell Script (build `.py` in IDE to Plug Depth)
+- **Layer 1**: 32x32 black box Host Shell (build `.py` in IDE to Plug Depth)
+- **Layer 2**: 32x32 black box Host (build `.py` in IDE to Plug Depth)
+- **Layer 3**: 32x32 black box (build `.py` in IDE to Plug Depth)
+- **Layer 4**: 32x32 Daemon Server Matrix (build `.py` in IDE to Plug Depth)
+- **Layer 5**: 32x32 DemonHead Domain Matrix (build in `.py` to Plug Depth)
+- **Layer 6**: 16x28 AngelHead
+
+### 4. Set Up Your Workspace in VS Code
+**Step 6**: Open up VS Code and open the Daemon folder as the workspace folder. If you don't know what this means, you can search engine it.
+
+### 5. Create a New tasks.json
+**Step 7**: Once you have all the files opened, you need to make a new `tasks.json` for your VS Code command palette.
+
+**Ask ChatGPT** how to use this code to let you open up all six layers at once or figure it out if you know how:
+
+```json
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Run All Python Files",
-            "type": "shell",
-            "command": "powershell",
-            "args": [
-                "-NoProfile",
-                "-Command",
-                "Get-ChildItem -Filter *.py | ForEach-Object {python $_.FullName}"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": true,
-                "panel": "dedicated"
-            },
-            "problemMatcher": []
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run All Python Files",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "Get-ChildItem -Filter *.py | ForEach-Object {python $_.FullName}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    }
+  ]
 }
-now you should see this when you hit Cmd+Shift+P in vs code ~ n\
-> Tasks: Run Task                                    recently used~ n\
-Tasks: Run Build Task                                Ctrl + Shift + B~ n\
-Tasks: Open User Tasks~ n\
-Tasks: Manage Automatic Tasks~ n\
-Debug: Select and Start Debugging~ n\
+```
 
-Accounts: Manage Trusted Extensions For Account      other commands~ n\
-Add Cursor Above                                     Ctrl + Alt + UpArrow~ n\
-Add Cursor Below                                     Ctrl + Alt + DownArrow~ n\
-Add Cursors To Bottom                                Ctrl + Shift + Alt + DownArrow~ n\
-Add Cursors to Line Ends                             Shift + Alt + I~ n\
-Add Cursors To Top                                   Ctrl + Shift + Alt + UpArrow~ n\
-Add Data Breakpoint at Address~ n\
-Add Function Breakpoint~ n\
-Add Line Comment                                     Ctrl + K Ctrl + C~ n\
-Add Selection To Next Find Match                     Ctrl + D~ n\
-Add Selection To Previous Find Match~ n\
-Add XHR/fetch Breakpoint~ n\
-C/C++ Runner: Build Folder                           Ctrl + K Ctrl + B~ n\
-You want to hit the very top, 
-~ n\
-"Tasks: Run Task" and it should open up 6 windows. If it suceeds, 
-~ n\you've completed the tutoiral.
-~ n\hope over to Frog Height and try experimenting with building each 
-~ n\.py by itself as a standalone terminal like this
-~ n\
-~ n\
-~ n\
-Run Chuck Throw Shell Save.py ~ n\
+**Step 8**: Now you should see this when you hit `Cmd+Shift+P` in VS Code:
 
-Run Python File > (>=Build Button In VS Code) ~ n\
-Run Python File in Dedicated Terminal ~ n\
-Python Debugger: Debug Python File ~ n\
-Python Debugger: Debug using launch.json ~ n\
-~ n\
-~ n\
-~ n\
-Happy Diving ~ n\
-check out the "fun" folder for standalone apps that can go alongside your environment processes threads.
+- Tasks: Run Task (recently used)
+- Tasks: Run Build Task (`Ctrl+Shift+B`)
+- Tasks: Open User Tasks
+- Tasks: Manage Automatic Tasks
+- Debug: Select and Start Debugging
+
+### 6. Running Your Tasks
+**Step 9**: You want to hit the very top, "Tasks: Run Task," and it should open up six windows. If it succeeds, you've completed the tutorial.
+
+### 7. Experiment with Building Each .py File
+**Step 10**: Hop over to Frog Height and try experimenting with building each `.py` file by itself as a standalone terminal like this:
+
+- Run Chuck Throw Shell Save.py
+- Run Python File > (>=Build Button In VS Code)
+- Run Python File in Dedicated Terminal
+- Python Debugger: Debug Python File
+- Python Debugger: Debug using launch.json
+
+Happy Diving! Check out the "fun" folder for standalone apps that can go alongside your environment processes and threads.
+
+---
+
+We hope this guide helps you get started with Mirror Three. Enjoy the new features and enhancements, and don't hesitate to share your feedback. Happy coding!
