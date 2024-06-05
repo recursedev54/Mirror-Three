@@ -1,3 +1,212 @@
+#Layer 28, the codex stream
+![Screenshot 28](https://github.com/zrebarchak/Mirror-Three/blob/main/Screenshot_28.png?raw=true)
+'''import os
+import tkinter as tk
+from tkinter import ttk
+
+def print_clipped_tree(startpath):
+    tree_structure = []
+    for root, dirs, files in os.walk(startpath):
+        level = root.replace(startpath, '').count(os.sep)
+        indent = ' ' * 4 * level
+        tree_structure.append('{}{}'.format(indent, ''.join([word[0] for word in os.path.basename(root).split()])))
+        subindent = ' ' * 4 * (level + 1)
+        for f in files:
+            tree_structure.append('{}{}'.format(subindent, ''.join([word[0] for word in f.split()])))
+    return tree_structure
+
+def display_tree_in_tkinter(tree_structure):
+    root = tk.Tk()
+    root.title("Directory Tree")
+    root.attributes('-fullscreen', True)
+    root.configure(bg='cyan')
+
+    main_frame = ttk.Frame(root)
+    main_frame.pack(fill=tk.BOTH, expand=1)
+
+    canvas = tk.Canvas(main_frame, bg='cyan')
+    scrollbar = ttk.Scrollbar(main_frame, orient=tk.VERTICAL, command=canvas.yview)
+    scrollable_frame = ttk.Frame(canvas, style="Custom.TFrame")
+
+    scrollable_frame.bind(
+        "<Configure>",
+        lambda e: canvas.configure(
+            scrollregion=canvas.bbox("all")
+        )
+    )
+
+    canvas.create_window((root.winfo_screenwidth() // 2, 0), window=scrollable_frame, anchor="n")
+    canvas.configure(yscrollcommand=scrollbar.set)
+
+    style = ttk.Style()
+    style.configure("Custom.TLabel", background="cyan", foreground="black", font=("Courier", 14))
+    style.configure("Custom.TFrame", background="cyan")
+
+    for line in tree_structure:
+        label = ttk.Label(scrollable_frame, text=line, style="Custom.TLabel")
+        label.pack(anchor='center')
+
+    canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=1)
+    scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+    # Mousewheel scrolling
+    def on_mousewheel(event):
+        canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+
+    root.bind_all("<MouseWheel>", on_mousewheel)
+
+    # Auto-scrolling
+    def auto_scroll():
+        canvas.yview_scroll(1, 'units')
+        root.after(100, auto_scroll)
+
+    root.after(100, auto_scroll)
+
+    root.bind("<Escape>", lambda e: root.destroy())
+
+    root.mainloop()
+
+if __name__ == "__main__":
+    base_dir = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current script
+    tree_structure = print_clipped_tree(base_dir)
+    display_tree_in_tkinter(tree_structure)
+'''
+z~` Here’s an explanation of the provided code in a format suitable for someone who might be using a screen reader or doesn't know Python. I'll break it down step by step and explain each part in plain language.
+
+### Introduction
+This code is a Python script that uses the Tkinter library to create a graphical user interface (GUI) which displays a simplified directory tree of files and folders from a specified starting path. The display is in fullscreen mode, has a cyan background, and scrolls automatically.
+
+### Code Breakdown
+
+#### 1. Importing Necessary Libraries
+
+```python
+import os
+import tkinter as tk
+from tkinter import ttk
+```
+
+- **os**: A library that provides a way to interact with the operating system, especially for manipulating files and directories.
+- **tkinter**: A standard GUI library in Python.
+- **ttk**: A module in Tkinter that provides themed widgets.
+
+#### 2. Function to Generate a Simplified Directory Tree
+
+```python
+def print_clipped_tree(startpath):
+    tree_structure = []
+    for root, dirs, files in os.walk(startpath):
+        level = root.replace(startpath, '').count(os.sep)
+        indent = ' ' * 4 * level
+        tree_structure.append('{}{}'.format(indent, ''.join([word[0] for word in os.path.basename(root).split()])))
+        subindent = ' ' * 4 * (level + 1)
+        for f in files:
+            tree_structure.append('{}{}'.format(subindent, ''.join([word[0] for word in f.split()])))
+    return tree_structure
+```
+
+- **Purpose**: This function walks through the directory structure starting from `startpath` and creates a list of strings representing the simplified directory tree.
+- **Steps**:
+  - `os.walk(startpath)`: Generates file names in a directory tree.
+  - For each directory (`root`), it calculates the depth level by counting separators (e.g., slashes).
+  - It then adds an indented string to `tree_structure` for each directory and file, where only the first letter of each word in the name is used.
+
+#### 3. Function to Display the Directory Tree in a Tkinter Window
+
+```python
+def display_tree_in_tkinter(tree_structure):
+    root = tk.Tk()
+    root.title("Directory Tree")
+    root.attributes('-fullscreen', True)
+    root.configure(bg='cyan')
+```
+
+- **Purpose**: Initializes the main Tkinter window in fullscreen mode with a cyan background.
+
+```python
+    main_frame = ttk.Frame(root)
+    main_frame.pack(fill=tk.BOTH, expand=1)
+
+    canvas = tk.Canvas(main_frame, bg='cyan')
+    scrollbar = ttk.Scrollbar(main_frame, orient=tk.VERTICAL, command=canvas.yview)
+    scrollable_frame = ttk.Frame(canvas, style="Custom.TFrame")
+```
+
+- **Purpose**: Creates the main frame, a canvas for drawing the directory tree, a scrollbar for vertical scrolling, and a scrollable frame within the canvas.
+
+```python
+    scrollable_frame.bind(
+        "<Configure>",
+        lambda e: canvas.configure(
+            scrollregion=canvas.bbox("all")
+        )
+    )
+
+    canvas.create_window((root.winfo_screenwidth() // 2, 0), window=scrollable_frame, anchor="n")
+    canvas.configure(yscrollcommand=scrollbar.set)
+```
+
+- **Purpose**: Configures the canvas to scroll when the scrollable frame is resized and positions the scrollable frame in the center at the top.
+
+```python
+    style = ttk.Style()
+    style.configure("Custom.TLabel", background="cyan", foreground="black", font=("Courier", 14))
+    style.configure("Custom.TFrame", background="cyan")
+
+    for line in tree_structure:
+        label = ttk.Label(scrollable_frame, text=line, style="Custom.TLabel")
+        label.pack(anchor='center')
+```
+
+- **Purpose**: Defines the style for labels and frames (cyan background, black text, Courier font) and adds each line of the directory tree to the scrollable frame as a centered label.
+
+```python
+    canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=1)
+    scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+```
+
+- **Purpose**: Packs the canvas to the left and the scrollbar to the right, filling the available space.
+
+```python
+    def on_mousewheel(event):
+        canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+
+    root.bind_all("<MouseWheel>", on_mousewheel)
+```
+
+- **Purpose**: Allows scrolling using the mouse wheel.
+
+```python
+    def auto_scroll():
+        canvas.yview_scroll(1, 'units')
+        root.after(100, auto_scroll)
+
+    root.after(100, auto_scroll)
+```
+
+- **Purpose**: Automatically scrolls the canvas down by one unit every 100 milliseconds.
+
+```python
+    root.bind("<Escape>", lambda e: root.destroy())
+
+    root.mainloop()
+```
+
+- **Purpose**: Binds the Escape key to close the application and starts the Tkinter event loop.
+
+#### 4. Main Execution Block
+
+```python
+if __name__ == "__main__":
+    base_dir = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current script
+    tree_structure = print_clipped_tree(base_dir)
+    display_tree_in_tkinter(tree_structure)
+```
+
+- **Purpose**: Determines the base directory of the script, generates the directory tree structure, and displays it using the Tkinter window.
+
+### Summary
+This script creates a fullscreen Tkinter window that displays a simplified directory tree of the current directory. The directory tree shows only the first letter of each word in the directory and file names. The window has a cyan background, and the tree scrolls automatically, with the option to scroll manually using the mouse wheel. The script also allows closing the window by pressing the Escape key.
 ## Layer 38... WebLaw...py
 ![Screenshot 27](https://github.com/zrebarchak/Mirror-Three/blob/main/Screenshot_27.png?raw=true)
 ```import os
